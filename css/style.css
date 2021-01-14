@@ -17,6 +17,15 @@
   border-radius: 15px;
   line-height: 50px;
 }
+
+a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+a:hover {
+  color: black;
+}
 /* utility class */
 
 header {
@@ -43,8 +52,12 @@ header #header-wrapper .left-side {
   width: 25%;
 }
 
+header #header-wrapper .left-side div:nth-child(2) a {
+  color: black;
+}
+
 header #header-wrapper img {
-  width: 80px;
+  width: 60px;
 }
 
 header #header-wrapper .right-side {
@@ -64,6 +77,10 @@ header #header-wrapper .button-log-in {
   background-color: #ccc;
 }
 
+.button-log-in .button-log:first-child a{
+  color: black;
+}
+
 .button-log-in .button-log:nth-child(2) {
   background-color: black;
   color: #fff;
@@ -72,6 +89,10 @@ header #header-wrapper .button-log-in {
 
 header #header-wrapper .right-side .section {
   position: relative;
+}
+
+.right-side .section div:first-child a {
+  color: black;
 }
 
 .menu-tendina {
@@ -89,10 +110,6 @@ header #header-wrapper .right-side .section {
   justify-content: space-around;
   align-items: center;
   width: 800px;
-}
-
-.menu-tendina li {
-  color: #ccc;
 }
 
 .menu-tendina.big > ul {
