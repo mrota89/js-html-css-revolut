@@ -2,18 +2,18 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-size: 15px;
   font-family: 'Montserrat', sans-serif;
 }
 
 header {
   height: 80px;
-  background: #d33359;
-  color: white;
+  background: #fff;
+  color: black;
   font-size: 20px;
   font-weight: bold;
   width: 100%;
   position: fixed;
-  z-index: 2;
 }
 
 header #header-wrapper {
@@ -26,7 +26,12 @@ header #header-wrapper {
 header #header-wrapper .left-side {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 25%;
+}
+
+header #header-wrapper img {
+  width: 80px;
 }
 
 header #header-wrapper .right-side {
@@ -53,7 +58,10 @@ header #header-wrapper .button-log-in {
 
 .menu-tendina.big {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
 }
 
 .menu-tendina.big>ul {

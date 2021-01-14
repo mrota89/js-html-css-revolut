@@ -1,5 +1,5 @@
 
 
-$('.section > button').click(function() {
-  $(this).next().toggle('visibility');
+$('.section > .button').click(function() {
+  $(this).next().toggleClass('visibility');
 })
