@@ -83,6 +83,9 @@ header #header-wrapper .button-log-in {
 
 .button-log-in .button-log:nth-child(2) {
   background-color: black;
+}
+
+.button-log-in .button-log:nth-child(2) a:hover {
   color: #fff;
 }
 
@@ -100,6 +103,9 @@ header #header-wrapper .right-side .section {
   top: 150%;
   color: black;
   list-style: none;
+  background: #fff;
+  box-shadow: 1px 1px 10px 2px #ccc;
+  border-radius: 2%;
 }
 
 .menu-tendina.big {
@@ -119,7 +125,8 @@ header #header-wrapper .right-side .section {
 }
 
 .menu-tendina li {
-  padding-bottom: 20px;
+  padding: 10px;
+  width: 200px;
 }
 
 .menu-tendina.visibility {
