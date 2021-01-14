@@ -12,7 +12,7 @@
 
 .button-log {
   height: 50px;
-  width: 120px;
+  width: 100px;
   text-align: center;
   border-radius: 15px;
   line-height: 50px;
@@ -53,45 +53,38 @@ header #header-wrapper .left-side {
   width: 25%;
 }
 
-header #header-wrapper .left-side div:nth-child(2) a {
+#header-wrapper .left-side div:nth-child(2) a {
   color: black;
 }
 
-header #header-wrapper img {
+#header-wrapper .left-side img {
   width: 60px;
 }
 
-header #header-wrapper .right-side {
+#header-wrapper .right-side {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 60%;
+  width: 55%;
 }
 
-header #header-wrapper .button-log-in {
-  display: flex;
-  justify-content: space-around;
-  width: 40%;
-}
-
-.button-log-in .button-log:first-child {
+#header-wrapper .right-side .i-box {
+  width: 25px;
+  height: 25px;
   background-color: #ccc;
+  display: inline-block;
+  border-radius: 50%;
+  vertical-align: middle;
+  text-align: center;
+  margin-right: 5px;
 }
 
-.button-log-in .button-log:first-child a{
-  color: black;
-}
-
-.button-log-in .button-log:nth-child(2) {
-  background-color: black;
-}
-
-.button-log-in .button-log:nth-child(2) a:hover {
+ #header-wrapper .right-side i {
   color: #fff;
+  vertical-align: middle;
 }
 
-
-header #header-wrapper .right-side .section {
+.right-side .section {
   position: relative;
 }
 
@@ -106,30 +99,69 @@ header #header-wrapper .right-side .section {
   list-style: none;
   background: #fff;
   box-shadow: 1px 1px 10px 2px #ccc;
-  border-radius: 2%;
+  border-radius: 10px;
 }
 
 .menu-tendina.big {
-  transform: translate(50%, 0);
-  right: 25%;
+  transform: translateX(-25%);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 800px;
 }
 
 .menu-tendina.big > ul {
   list-style: none;
   text-align: left;
-  height: 200px;
+  height: 250px;
 }
+
+.menu-tendina.big > ul > li:first-child {
+  color: #ccc;
+  font-size: 10px;
+}
+
+.menu-tendina.big > ul > li:last-child {
+  color: #ccc;
+  position: relative;
+}
+
+.menu-tendina.big > ul > li:last-child span {
+  position: relative;
+  bottom: 15px;
+  right: 15px;
+  font-size: 10px;
+  color: lightblue;
+}
+
 
 .menu-tendina li {
   padding: 10px;
   width: 200px;
 }
 
-.menu-tendina.visibility {
+.menu-tendina.hide {
   display: none;
+}
+
+header #header-wrapper .button-log-in {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.button-log-in .button-log:first-child {
+  background-color: #f0f0f0;
+}
+
+.button-log-in .button-log:first-child a{
+  color: black;
+}
+
+.button-log-in .button-log:nth-child(2) {
+  background-color: black;
+}
+
+.button-log-in .button-log:nth-child(2) a:hover {
+  color: #fff;
 }
