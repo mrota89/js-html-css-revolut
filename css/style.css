@@ -1,3 +1,4 @@
+/* utility class */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -8,6 +9,15 @@
 .color-grey {
   color: #ccc;
 }
+
+.button-log {
+  height: 50px;
+  width: 150px;
+  text-align: center;
+  border-radius: 15px;
+  line-height: 50px;
+}
+/* utility class */
 
 header {
   height: 80px;
@@ -40,14 +50,25 @@ header #header-wrapper img {
 header #header-wrapper .right-side {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 60%;
 }
 
 header #header-wrapper .button-log-in {
   display: flex;
   justify-content: space-around;
-  width: 25%;
+  width: 30%;
 }
+
+.button-log-in .button-log:first-child {
+  background-color: #ccc;
+}
+
+.button-log-in .button-log:nth-child(2) {
+  background-color: black;
+  color: #fff;
+}
+
 
 header #header-wrapper .right-side .section {
   position: relative;
